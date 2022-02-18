@@ -1,58 +1,80 @@
+<!-- Identificação de um codigo html -->
 <!DOCTYPE html>
+
+<!-- Abrindo a tag html -->
 <html>
 
+<!-- Abrindo a tag head: Servi para organizar as configurações padrão do codigo html -->
 <head>
+
+  <!-- Define a configuração do conjuto de caracteres como sendo UTF-8 -->
   <meta charset="UTF-8">
+
+  <!-- Criação do Titulo da pagina -->
   <title>Cardápio</title>
 
-  <!-- Bootstrap - CSS -->
+  <!-- Bootstrap - CSS --> <!-- É chamado o Bootsrap e o CSS para estilazar a pagina -->
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- Fechando a tag head -->
 </head>
 
+<!-- Abrindo a tag body: Definição do corpo da pagina -->
 <body>
+  
+  <!-- Abrindo a tag header: Criação do cabeçalho da pagina -->
   <header>
-    <!-- Toolbar -->
+    
+    <!-- Toolbar --> <!-- Definindo o Sumário da pagina -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           Coffee
           <small>Arábica</small>
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!-- Referenciando o Bootstrap -->
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Criando a lista do sumário  -->
           <ul class="navbar-nav">
+            <!-- Item da lista: se refere a pagina Home -->
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            <!-- Item da lista: se refere a pagina Cardápio -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
+              <a class="nav-link" href="./cardapio.html">Cardápio</a>
             </li>
+            <!-- Item da lista: se refere a pagina Sobre -->
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
             </li>
+          <!-- Fechando a ul -->
           </ul>
         </div>
+        <!-- Fechando a div -->
       </div>
+    <!-- Fechando a tag nav -->
     </nav>
-
+  <!-- Fechando a tag header -->
   </header>
+
+  <!-- Definindo a tag main : Usado para destacar o codigo principal da pagina-->
   <main>
+    <!-- Controle do menu de opções  -->
     <section class="my-3">
 
-      <!-- Grid -->
+      <!-- Grid --> <!-- Criação de uma div -->
       <div class="container">
 
-        <!-- Button trigger modal -->
+        <!-- Button trigger modal --> <!-- Criação de um botão usando Bootstrap e Modal -->
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           +
         </button>
 
-        <!-- Modal -->
+        <!-- Modal --> <!-- Criando o Modal -->
         <div class="modal fade" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -60,54 +82,95 @@
                 <h5 class="modal-title" id="exampleModalLabel">Adicionar Item</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+
+              <!-- Criação de div estilo modal -->
               <div class="modal-body">
 
+                <!-- Titulo do Modal -->
                 <h1>Conteúdo do modal</h1>
 
-                <!-- Formulário -->
+                <!-- Formulário --> <!-- Criação do Formulário -->
                 <form id="foodForm">
+
+                  <!-- Criação de div mb-3 -->
                   <div class="mb-3">
-                    <!-- Nome -->
+
+                    <!-- Nome --> <!-- Criando elemento tipo label -->
                     <label for="nome" class="form-label">Nome</label>
+
+                    <!-- Criando elemento tipo input - Pirmeiro campo do formulario -->
                     <input type="text" name="nome" id="nome" class="form-control">
+
+                    <!-- Criando elemento placeholder -->
                     <div id="nomeHelp" class="form-text">Adicione o nome do Alimento.</div>
+
+                    <!-- Fechando a div -->
                   </div>
 
-                  <!-- Descrição -->
+                  <!-- Descrição --> <!-- Criação de div mb-3 -->
                   <div class="mb-3">
+
+                    <!-- Criando elemento tipo label -->
                     <label for="descricao" class="form-label">Descrição</label>
+
+                    <!-- Criando elemento tipo input - Campo do formulario -->
                     <input type="text" name="descricao" id="descricao" class="form-control">
+
+                    <!-- Fechando a div -->
                   </div>
 
-                  <!-- Preço -->
-                  <div class="mb-3">
+                  <!-- Preço --> <!-- Criação de div mb-3 -->
+                  <div class="mb-3"> 
+
+                    <!-- Criando elemento tipo label -->
                     <label for="preco" class="form-label">Preço</label>
+
+                    <!-- Criando elemento tipo input - Campo do formulario -->
                     <input type="text" name="preco" id="preco" class="form-control">
+
+                    <!-- Fechando a div -->
                   </div>
 
-                  <!-- Imagem -->
+                  <!-- Imagem --> <!-- Criação de div mb-3 -->
                   <div class="mb-3">
+
+                    <!-- Criando elemento tipo label -->
                     <label for="imagem" class="form-label">Imagem</label>
+                  
+                    <!-- Criando elemento tipo input - Campo do formulario -->
                     <input type="text" name="imagem" id="imagem" class="form-control">
+
+                    <!-- Fechando a div -->
                   </div>
 
+                  <!-- Criação de div modal-footer -->
                   <div class="modal-footer">
+                    <!-- Criando elemento tipo button : Botão de fechar o modal -->
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
 
                     <!-- <input type="submit" value="Adicionar"> -->
+                    <!-- Criando elemento tipo button : Botão de adicionar novo alimento -->
                     <button type="submit" class="btn btn-primary" id="adicionarFoodButton">
                       Adicionar
                     </button>
+
+                    <!-- Fechando a div -->
                   </div>
+
+                  <!-- Fechando a tag form -->
                 </form>
 
+                <!-- Fechando a div -->
               </div>
 
+              <!-- Fechando a div -->
             </div>
+            <!-- Fechando a div -->
           </div>
+          <!-- Fechando a div -->
         </div>
 
-        <!-- Linha -->
+        <!-- Linha -->  
         <div id="itens-cardapio" class="row">
 
           <!-- Colunas-->
@@ -116,15 +179,19 @@
         </div>
 
     </section>
-
+    <!-- Fechando a tag main -->
   </main>
+
+  <!-- Rodapé da pagina -->
   <footer></footer>
 
-  <!-- Cardápio -->
+  <!-- Cardápio --> <!-- Referenciando o cardápio -->
   <script src="./js/cardapio.js" type="module"></script>
 
-  <!-- Bootstrap - Js -->
+  <!-- Bootstrap - Js --> <!-- Referenciando a Bootstrap para o Js -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+<!-- Fechando a tag body -->
+</body>
+<!-- Fechando a tag html -->
 </html>
