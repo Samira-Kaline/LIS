@@ -1,53 +1,73 @@
+<!-- Identificação de um codigo html -->
 <!DOCTYPE html>
+
+<!-- Abrindo a tag html -->
 <html>
 
+<!-- Abrindo a tag head: Servi para organizar as configurações padrão do codigo html -->
 <head>
 
+  <!-- Define a configuração do conjuto de caracteres como sendo UTF-8 -->
   <meta charset="UTF-8">
+
+  <!-- Criação do Titulo da pagina -->
   <title>Document</title>
 
-  <!-- Bootstrap - CSS -->
+  <!-- Bootstrap - CSS --> <!-- É chamado o Bootsrap e o CSS para estilazar a pagina -->
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Estilo da aplicação -->
+  <!-- Estilo da aplicação --> <!-- Criando o estilo da pagina -->
   <link rel="stylesheet" href="css/index.css">
 
-
+<!-- Fechando a tag head -->
 </head>
 
+<!-- Abrindo a tag body: Definição do corpo da pagina -->
 <body>
 
+  <!-- Abrindo a tag header: Criação do cabeçalho da pagina -->
   <header>
-    <!-- Toolbar -->
+    
+    <!-- Toolbar --> <!-- Definindo o Sumário da pagina -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           Coffee
           <small>Arábica</small>
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!-- Referenciando o Bootstrap -->
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Criando a lista do sumário  -->
           <ul class="navbar-nav">
+            <!-- Item da lista: se refere a pagina Home -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            <!-- Item da lista: se refere a pagina Cardápio -->
             <li class="nav-item">
               <a class="nav-link" href="./cardapio.html">Cardápio</a>
             </li>
+            <!-- Item da lista: se refere a pagina Sobre -->
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
             </li>
+          <!-- Fechando a ul -->
           </ul>
         </div>
+        <!-- Fechando a div -->
       </div>
+    <!-- Fechando a tag nav -->
     </nav>
+  <!-- Fechando a tag header -->
   </header>
-
+  
+  <!-- Definindo a tag main : Usado para destacar o codigo principal da pagina-->
+  <!-- Codigo Exemplo de estrutura de pagina -->
   <main>
+    <!-- Controle do menu de opções  -->
     <section>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
